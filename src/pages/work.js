@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/SEO.js"
 
 const Title = styled.h2`
+  margin-bottom: 20px;
   font-size: 12px;
   text-transform: uppercase;
   color: gray;
@@ -12,7 +13,7 @@ const Title = styled.h2`
 `
 
 const WorkCard = styled.div`
-  margin-top: 30px;
+  margin-bottom: 30px;
   line-height: 30px;
   h3 {
     margin-bottom: 5px;
@@ -21,7 +22,7 @@ const WorkCard = styled.div`
 
   p {
     font-size: 14px;
-    /* line-height: 30px; */
+    line-height: 25px;
   }
 `
 
@@ -29,6 +30,16 @@ const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+`
+
+const SkillTag = styled.div`
+  margin-top: 8px;
+  span {
+    background: #e4e4e4;
+    padding: 5px 8px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
 `
 
 const WorkPage = () => (
@@ -59,8 +70,15 @@ const WorkPage = () => (
               </a>
             </h3>
           </TitleWrapper>
-          <p>Role: Full Stack Developer</p>
-          <p>Built with: NextJS, TailwindCSS, MongoDB</p>
+          <p>
+            A web application for people to find best smartphones from various
+            e-commerce sites in Bangladesh.
+          </p>
+          <SkillTag>
+            <span>NextJS</span>
+            <span>TailwindCSS</span>
+            <span>MongoDB</span>
+          </SkillTag>
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
@@ -84,8 +102,16 @@ const WorkPage = () => (
               </a>
             </h3>
           </TitleWrapper>
-          <p>Role: Full Stack Developer</p>
-          <p>Built with: React, CSS, Custom API</p>
+          <p>
+            A browser plugin which shows what animes are airing on that week.
+            Added option of linking a streaming site to the individual anime.
+          </p>
+
+          <SkillTag>
+            <span>React</span>
+            <span>CSS</span>
+            <span>REST API</span>
+          </SkillTag>
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
@@ -109,8 +135,19 @@ const WorkPage = () => (
               </a>
             </h3>
           </TitleWrapper>
-          <p>Role: Full Stack Developer</p>
-          <p>Built with: React, Node, MongoDB</p>
+          <p>
+            A fictional healthcare service which lets people find nearest
+            hospital from their location, book appointment with doctors, rent
+            hospital cabin for seriously ill patient, upload and store old
+            medical records in the app. Built for an university final year
+            project.
+          </p>
+
+          <SkillTag>
+            <span>React</span>
+            <span>Node</span>
+            <span>MongoDB</span>
+          </SkillTag>
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
@@ -134,8 +171,19 @@ const WorkPage = () => (
               </a>
             </h3>
           </TitleWrapper>
-          <p>Role: Full Stack Developer</p>
-          <p>Built with: HTML, CSS, JS, PHP, MySQL</p>
+          <p>
+            An experimental social media site built for paper book
+            enthusiasts/collectors. Main features include sharing book
+            collections with other users, in app messaging.
+          </p>
+
+          <SkillTag>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </SkillTag>
         </WorkCard>
       </div>
     </Layout>

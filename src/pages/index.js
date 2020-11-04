@@ -17,7 +17,7 @@ const Skill = styled.div`
   }
 `
 const About = styled.div`
-  margin-top: 40px;
+  margin-top: 30px;
   h2 {
     font-size: 18px;
     margin-bottom: 10px;
