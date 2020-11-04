@@ -90,20 +90,10 @@ const Header = () => (
   <header>
     <MobileNavigation>
       <div>
-        <Link
-          style={{ color: window.location.pathname === "/work" && "gray" }}
-          to="/work"
-        >
-          Work
-        </Link>
+        <Link to="/work">Work</Link>
       </div>
       <div>
-        <Link
-          style={{ color: window.location.pathname === "/blog" && "gray" }}
-          to="/blog"
-        >
-          Blog
-        </Link>
+        <Link to="/blog">Blog</Link>
       </div>
     </MobileNavigation>
     <TopHeader>
@@ -122,20 +112,10 @@ const Header = () => (
 
       <Navigation>
         <div>
-          <Link
-            style={{ color: window.location.pathname === "/work" && "gray" }}
-            to="/work"
-          >
-            Work
-          </Link>
+          <Link to="/work">Work</Link>
         </div>
         <div>
-          <Link
-            style={{ color: window.location.pathname === "/blog" && "gray" }}
-            to="/blog"
-          >
-            Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </div>
       </Navigation>
     </TopHeader>
