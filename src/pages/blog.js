@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import SEO from "../components/SEO.js"
 
 const BlogCard = styled.div`
   margin-top: 30px;
@@ -51,21 +52,24 @@ function BlogPage() {
   // console.log(data.posts.edges)
   const result = data.posts.edges
   return (
-    <Layout>
-      <div>
-        {/* <Title>I write every week</Title> */}
-        {result.map((post, i) => (
-          <BlogCard key={i}>
-            <Link to={`/blog/${post.node.fields.slug}`}>
-              <h3>{post.node.frontmatter.title}</h3>
-            </Link>
+    <>
+      <SEO title="Blog" description="Full Stack Developer" />
+      <Layout>
+        <div>
+          {/* <Title>I write every week</Title> */}
+          {result.map((post, i) => (
+            <BlogCard key={i}>
+              <Link to={`/blog/${post.node.fields.slug}`}>
+                <h3>{post.node.frontmatter.title}</h3>
+              </Link>
 
-            <DateText>{post.node.frontmatter.date}</DateText>
-            <ExcerptText>{post.node.excerpt}</ExcerptText>
-          </BlogCard>
-        ))}
-      </div>
-    </Layout>
+              <DateText>{post.node.frontmatter.date}</DateText>
+              <ExcerptText>{post.node.excerpt}</ExcerptText>
+            </BlogCard>
+          ))}
+        </div>
+      </Layout>
+    </>
   )
 }
 

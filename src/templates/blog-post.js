@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import SEO from "../components/SEO.js"
 
 export const query = graphql`
   query($slug: String!) {
@@ -36,19 +37,25 @@ const Title = styled.h2`
 
 const blogpost = ({ data }) => {
   return (
-    <Layout>
-      <div>
-        <Title>{data.markdownRemark.frontmatter.title}</Title>
-        <DateText>
-          {data.markdownRemark.frontmatter.date} -{" "}
-          <span>{data.markdownRemark.timeToRead} min read</span>
-        </DateText>
+    <>
+      <SEO
+        title={data.markdownRemark.frontmatter.title}
+        description="Written by Towfiqul Islam"
+      />
+      <Layout>
+        <div>
+          <Title>{data.markdownRemark.frontmatter.title}</Title>
+          <DateText>
+            {data.markdownRemark.frontmatter.date} -{" "}
+            <span>{data.markdownRemark.timeToRead} min read</span>
+          </DateText>
 
-        <BlogPost
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        ></BlogPost>
-      </div>
-    </Layout>
+          <BlogPost
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          ></BlogPost>
+        </div>
+      </Layout>
+    </>
   )
 }
 

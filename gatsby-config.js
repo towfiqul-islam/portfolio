@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: `Towfiqul Islam`,
+    description: "Full Stack Developer",
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
 

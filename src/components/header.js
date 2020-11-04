@@ -106,7 +106,17 @@ const Header = () => (
         </Name>
 
         <Social>
-          <span> twitter - github - mail</span>
+          <div>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              twitter -{" "}
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              github -{" "}
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              mail
+            </a>
+          </div>
         </Social>
       </NavTitle>
 
