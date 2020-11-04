@@ -3,8 +3,6 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 
-import "../styles/global.css"
-
 const Skill = styled.div`
   margin-top: 10px;
   h2 {
