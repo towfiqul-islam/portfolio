@@ -86,50 +86,72 @@ const Social = styled.div`
 `
 
 // const pathName = window.location.pathname
-const Header = () => (
-  <header>
-    <MobileNavigation>
-      <div>
-        <Link to="/work">Work</Link>
-      </div>
-      <div>
-        <Link to="/blog">Blog</Link>
-      </div>
-    </MobileNavigation>
-    <TopHeader>
-      <ProfileImage src={Profile} alt="" />
-
-      <NavTitle>
-        <Name>
-          <Link to="/">Towfiqul Islam </Link>{" "}
-          <Title> - Full Stack Developer</Title>
-        </Name>
-
-        <Social>
-          <div>
-            <a href="#!" target="_blank" rel="noopener noreferrer">
-              twitter -{" "}
-            </a>
-            <a href="#!" target="_blank" rel="noopener noreferrer">
-              github -{" "}
-            </a>
-            <a href="#!" target="_blank" rel="noopener noreferrer">
-              mail
-            </a>
-          </div>
-        </Social>
-      </NavTitle>
-
-      <Navigation>
+const Header = () => {
+  const openMail = () => {
+    window.location.href =
+      "mailto:towfiqu@gmail.com?subject=Hi&body=message%20goes%20here"
+  }
+  return (
+    <header>
+      <MobileNavigation>
         <div>
           <Link to="/work">Work</Link>
         </div>
         <div>
           <Link to="/blog">Blog</Link>
         </div>
-      </Navigation>
-    </TopHeader>
-  </header>
-)
+      </MobileNavigation>
+      <TopHeader>
+        <Link to="/">
+          <ProfileImage src={Profile} alt="" />
+        </Link>
+
+        <NavTitle>
+          <Name>
+            <Link to="/">Towfiqul Islam </Link>{" "}
+            <Title> - Full Stack Developer</Title>
+          </Name>
+
+          <Social>
+            <div>
+              <a
+                href="https://twitter.com/Towfiq_ul_Islam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                twitter -{" "}
+              </a>
+              <a
+                href="https://github.com/towfiqul-islam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github -{" "}
+              </a>
+              <a
+                title="towfiqu@gmail.com"
+                onClick={openMail}
+                href="#!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                gmail
+              </a>
+            </div>
+          </Social>
+        </NavTitle>
+
+        <Navigation>
+          <div>
+            <Link to="/work">Work</Link>
+          </div>
+          <div>
+            <Link to="/blog">Blog</Link>
+          </div>
+        </Navigation>
+      </TopHeader>
+    </header>
+  )
+}
 
 export default Header

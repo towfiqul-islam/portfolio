@@ -3,9 +3,10 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 import "normalize.css"
-import "../styles/global.css"
+
 import styled from "styled-components"
 import { Link } from "gatsby"
+import GlobalStyles from "../styles/GlobalStyles"
 
 const FooterNav = styled.div`
   display: flex;
@@ -25,6 +26,7 @@ const FooterNav = styled.div`
 const Layout = ({ children }) => {
   return (
     <>
+      <GlobalStyles />
       <Header />
       <div>
         <main>{children}</main>
