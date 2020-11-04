@@ -71,8 +71,8 @@ const WorkPage = () => (
             </h3>
           </TitleWrapper>
           <p>
-            A web application for people to find best smartphones from various
-            e-commerce sites in Bangladesh.
+            A web application for people to find smartphones based on their
+            preferences from various e-commerce sites in Bangladesh.
           </p>
           <SkillTag>
             <span>NextJS</span>
