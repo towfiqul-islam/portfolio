@@ -39,6 +39,7 @@ function BlogPage() {
               date
               title
             }
+            timeToRead
             excerpt
             fields {
               slug
@@ -63,7 +64,9 @@ function BlogPage() {
                 <h3>{post.node.frontmatter.title}</h3>
               </Link>
 
-              <DateText>{post.node.frontmatter.date}</DateText>
+              <DateText>
+                {post.node.frontmatter.date} - {post.node.timeToRead} min read
+              </DateText>
               <ExcerptText>{post.node.excerpt}</ExcerptText>
             </BlogCard>
           ))}
