@@ -11,7 +11,7 @@ const Skill = styled.div`
     margin-bottom: 10px;
   }
   span {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     color: #555;
   }
@@ -25,7 +25,12 @@ const About = styled.div`
   p {
     font-weight: normal;
     line-height: 26px;
-    font-size: 14px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 14px;
+    }
   }
 `
 
