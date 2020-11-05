@@ -1,10 +1,14 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
+
+html {
+  
+  font-family: 'Lato', sans-serif;
+}
 body {
     max-width: 600px;
     margin: 30px auto auto auto;
-    font-family: 'Lato', sans-serif;
   }
   
   h1,
@@ -29,7 +33,12 @@ body {
   }
 
   .gatsby-resp-image-wrapper {
-    margin-left: 0 !important
+    margin-left: 0 !important;
+  }
+
+  .gatsby-resp-image-image {
+    border-radius: 4px !important;
+
   }
   
   @media screen and (max-width: 500px) {
