@@ -21,7 +21,7 @@ Open your chosen Terminal app and go to the directory where index.js lives. now 
 
 <br>
 
-```
+```bash
 npm init -y
 ```
 
@@ -35,7 +35,7 @@ let's install bcrypt. On your Terminal, run the following command
 
 <br>
 
-```
+```bash
 npm install bcrypt
 ```
 
@@ -45,7 +45,7 @@ By the way if your install gives you error for some reason then install the vers
 
  <br>
 
-```
+```bash
 npm install bcrypt@3.0.6
 ```
 

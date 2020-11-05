@@ -15,7 +15,7 @@ To check node version Type.
 
 <br>
 
-```sh
+```bash
 node - v
 ```
 
@@ -25,7 +25,7 @@ To check npm version Type.
 
 <br>
 
-```powershell
+```bash
 npm -v
 ```
 
@@ -33,7 +33,7 @@ npm -v
 
 If you get a version number in return which will look something like this.
 
-```powershell
+```bash
 v10.16.3 (in case of Node)
 6.9.0 (in case of npm)
 ```
@@ -54,7 +54,7 @@ Create a folder where you want to keep your server code. On your terminal go to 
 
 <br>
 
-```sh
+```bash
 npm init -y
 ```
 
@@ -105,7 +105,7 @@ To install a node package all you have to do is go to your terminal and run this
 
 <br>
 
-```sh
+```bash
 npm install express
 ```
 
@@ -199,7 +199,7 @@ run this command
 
 <br>
 
-```sh
+```bash
 node index.js
 ```
 
@@ -209,7 +209,7 @@ If everything goes well you will see in your console
 
 <br>
 
-```sh
+```bash
 Server started on port 5000
 ```
 
@@ -221,7 +221,7 @@ You should see the following
 
 <br>
 
-```sh
+```bash
 Node Server Running!!
 ```
 

@@ -9,7 +9,7 @@ You have made a cool site with html, CSS & JavaScript, and you have seen how eas
 
 <br>
 
-```sh
+```bash
 mysite.com/index.html
 ```
 
@@ -43,7 +43,7 @@ My understanding is you already have a site on Netlify. So, I will just jump int
 
 <br>
 
-```sh
+```bash
 # for root
 /*				/index.html		200
 
