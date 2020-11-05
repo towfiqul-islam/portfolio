@@ -85,11 +85,10 @@ const Social = styled.div`
   }
 `
 
-// const pathName = window.location.pathname
 const Header = ({ location }) => {
   const openMail = () => {
     window.location.href =
-      "mailto:towfiqu@gmail.com?subject=Hi&body=message%20goes%20here"
+      "mailto:towfiqu@gmail.com?subject=Subject&body=message%20goes%20here"
   }
   return (
     <header>
