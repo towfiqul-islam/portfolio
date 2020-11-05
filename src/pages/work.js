@@ -8,7 +8,7 @@ const Title = styled.h2`
   margin-bottom: 20px;
   font-size: 12px;
   text-transform: uppercase;
-  color: gray;
+  color: #606f7b;
   letter-spacing: 1.2px;
 `
 
@@ -42,38 +42,45 @@ const SkillTag = styled.div`
   }
 `
 
-const WorkPage = () => (
+const VisitLink = styled.a`
+  font-size: 14px;
+  color: #606f7b;
+  display: flex;
+  gap: 5px;
+  span {
+    font-size: 10px;
+  }
+`
+
+const WorkPage = props => (
   <>
     <SEO title="Work" description="Full Stack Developer" />
-    <Layout>
+    <Layout location={props.location}>
       <div>
         <Title>These are my most recent work</Title>
         <WorkCard>
           <TitleWrapper>
-            {" "}
-            <div
-              style={{
-                width: "20px",
-                height: "6px",
-                background: "#CD3E3E",
-                borderRadius: "10px",
-                marginBottom: "4px",
-              }}
-            ></div>
             <h3>
               <a
                 href="https://spotr.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Spotr.com.bd
+                Spotr
               </a>
             </h3>
           </TitleWrapper>
           <p>
-            A web application for people to find smartphones based on their
+            A web application for people to choose smartphones based on their
             preferences from various e-commerce sites in Bangladesh.
           </p>
+          <VisitLink
+            href="https://spotr.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit the site <span>&#8594;</span>
+          </VisitLink>
           <SkillTag>
             <span>NextJS</span>
             <span>TailwindCSS</span>
@@ -82,16 +89,6 @@ const WorkPage = () => (
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
-            {" "}
-            <div
-              style={{
-                width: "20px",
-                height: "6px",
-                background: "#59CC8F",
-                borderRadius: "10px",
-                marginBottom: "4px",
-              }}
-            ></div>
             <h3>
               <a
                 href="https://addons.mozilla.org/en-US/firefox/addon/stay-anime/?utm_content=search&utm_medium=referral&utm_source=addons.mozilla.org"
@@ -107,6 +104,14 @@ const WorkPage = () => (
             Added option of linking a streaming site to the individual anime.
           </p>
 
+          <VisitLink
+            href="https://addons.mozilla.org/en-US/firefox/addon/stay-anime/?utm_content=search&utm_medium=referral&utm_source=addons.mozilla.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download the plugin <span>&#8594;</span>
+          </VisitLink>
+
           <SkillTag>
             <span>React</span>
             <span>CSS</span>
@@ -115,16 +120,6 @@ const WorkPage = () => (
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
-            {" "}
-            <div
-              style={{
-                width: "20px",
-                height: "6px",
-                background: "#99ABE4",
-                borderRadius: "10px",
-                marginBottom: "4px",
-              }}
-            ></div>
             <h3>
               <a
                 href="https://amscare.netlify.app/"
@@ -143,6 +138,14 @@ const WorkPage = () => (
             project.
           </p>
 
+          <VisitLink
+            href="https://amscare.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit the site <span>&#8594;</span>
+          </VisitLink>
+
           <SkillTag>
             <span>React</span>
             <span>Node</span>
@@ -151,16 +154,6 @@ const WorkPage = () => (
         </WorkCard>
         <WorkCard>
           <TitleWrapper>
-            {" "}
-            <div
-              style={{
-                width: "20px",
-                height: "6px",
-                background: "#343740",
-                borderRadius: "10px",
-                marginBottom: "4px",
-              }}
-            ></div>
             <h3>
               <a
                 href="https://exchangeyourbook.netlify.app/"
@@ -176,6 +169,14 @@ const WorkPage = () => (
             enthusiasts/collectors. Main features include sharing book
             collections with other users, in app messaging.
           </p>
+
+          <VisitLink
+            href="https://exchangeyourbook.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit the site <span>&#8594;</span>
+          </VisitLink>
 
           <SkillTag>
             <span>HTML</span>

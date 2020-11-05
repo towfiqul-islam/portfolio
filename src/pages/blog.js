@@ -29,7 +29,7 @@ const ExcerptText = styled.p`
   /* color: gray; */
 `
 
-function BlogPage() {
+function BlogPage(props) {
   const data = useStaticQuery(graphql`
     query {
       posts: allMarkdownRemark {
@@ -55,7 +55,7 @@ function BlogPage() {
   return (
     <>
       <SEO title="Blog" description="Full Stack Developer" />
-      <Layout>
+      <Layout location={props.location}>
         <div>
           {/* <Title>I write every week</Title> */}
           {result.map((post, i) => (

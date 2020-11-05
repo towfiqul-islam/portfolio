@@ -25,6 +25,11 @@ body {
   
   img {
     max-width: 600px;
+    margin: 0;
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin-left: 0 !important
   }
   
   @media screen and (max-width: 500px) {

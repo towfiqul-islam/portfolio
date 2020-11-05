@@ -23,11 +23,11 @@ const FooterNav = styled.div`
   }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   return (
     <>
       <GlobalStyles />
-      <Header />
+      <Header location={location} />
       <div>
         <main>{children}</main>
         <footer

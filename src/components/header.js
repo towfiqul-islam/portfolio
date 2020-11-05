@@ -86,7 +86,7 @@ const Social = styled.div`
 `
 
 // const pathName = window.location.pathname
-const Header = () => {
+const Header = ({ location }) => {
   const openMail = () => {
     window.location.href =
       "mailto:towfiqu@gmail.com?subject=Hi&body=message%20goes%20here"
@@ -95,10 +95,30 @@ const Header = () => {
     <header>
       <MobileNavigation>
         <div>
-          <Link to="/work">Work</Link>
+          <Link
+            style={{
+              color:
+                location !== undefined &&
+                location.pathname === "/work" &&
+                "gray",
+            }}
+            to="/work"
+          >
+            Work
+          </Link>
         </div>
         <div>
-          <Link to="/blog">Blog</Link>
+          <Link
+            style={{
+              color:
+                location !== undefined &&
+                location.pathname === "/blog" &&
+                "gray",
+            }}
+            to="/blog"
+          >
+            Blog
+          </Link>
         </div>
       </MobileNavigation>
       <TopHeader>
@@ -143,10 +163,30 @@ const Header = () => {
 
         <Navigation>
           <div>
-            <Link to="/work">Work</Link>
+            <Link
+              style={{
+                color:
+                  location !== undefined &&
+                  location.pathname === "/work" &&
+                  "gray",
+              }}
+              to="/work"
+            >
+              Work
+            </Link>
           </div>
           <div>
-            <Link to="/blog">Blog</Link>
+            <Link
+              style={{
+                color:
+                  location !== undefined &&
+                  location.pathname === "/blog" &&
+                  "gray",
+              }}
+              to="/blog"
+            >
+              Blog
+            </Link>
           </div>
         </Navigation>
       </TopHeader>
