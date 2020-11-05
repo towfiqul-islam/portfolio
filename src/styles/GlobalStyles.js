@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
 body {
     max-width: 600px;
     margin: 30px auto auto auto;
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;
   }
   
   h1,
