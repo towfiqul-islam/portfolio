@@ -13,7 +13,7 @@ export const DateText = styled.p`
   margin-top: 10px;
   font-size: 16px;
   font-weight: normal;
-  color: gray;
+  color: #555;
 `
 
 export const ExcerptText = styled.p`

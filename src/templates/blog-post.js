@@ -20,7 +20,7 @@ export const query = graphql`
 const DateText = styled.p`
   font-size: 16px;
   font-weight: normal;
-  color: gray;
+  color: #555;
   margin-top: 12px;
 `
 

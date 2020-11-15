@@ -42,6 +42,11 @@ export const SkillTag = styled.div`
     font-size: 16px;
     color: #555;
   }
+  @media screen and (max-width: 500px) {
+    span {
+      font-size: 14px;
+    }
+  }
 `
 
 export const VisitLink = styled.a`
@@ -52,6 +57,9 @@ export const VisitLink = styled.a`
   display: flex;
   gap: 5px;
   span {
-    font-size: 10px;
+    font-size: 16px;
+  }
+  :hover {
+    color: #102a43;
   }
 `

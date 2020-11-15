@@ -7,7 +7,7 @@ html {
   font-family: 'Lato', sans-serif;
 }
 body {
-    max-width: 600px;
+    max-width: 650px;
     margin: 30px auto auto auto;
   }
   
