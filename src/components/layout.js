@@ -37,6 +37,7 @@ const Layout = ({ children, location }) => {
             textAlign: "center",
             fontSize: "16px",
             color: "gray",
+            lineHeight: "20px",
           }}
         >
           <FooterNav>
