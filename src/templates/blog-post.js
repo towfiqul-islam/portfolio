@@ -18,20 +18,27 @@ export const query = graphql`
 `
 
 const DateText = styled.p`
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
   color: gray;
-  margin-top: 8px;
+  margin-top: 12px;
 `
 
 const BlogPost = styled.div`
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 36px;
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
 `
 
 const Title = styled.h2`
+  font-size: 24px;
+  margin-top: 50px;
+  line-height: 36px;
   @media screen and (max-width: 500px) {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 32px;
   }
 `
 

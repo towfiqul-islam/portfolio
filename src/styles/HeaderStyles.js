@@ -10,31 +10,32 @@ export const NavTitle = styled.div`
 export const Name = styled.h1`
   display: flex;
   align-items: baseline;
-  font-size: 20px;
+  font-size: 24px;
   color: black;
   @media screen and (max-width: 500px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `
 
 export const Title = styled.span`
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 18px;
   color: #555;
   font-weight: normal;
   margin-left: 5px;
   @media screen and (max-width: 500px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `
 
 export const Navigation = styled.nav`
   display: flex;
   gap: 30px;
+
   justify-content: end;
   align-items: center;
-  font-size: 14px;
+  font-size: 18px;
 
   @media screen and (max-width: 500px) {
     display: none;
@@ -43,10 +44,10 @@ export const Navigation = styled.nav`
 
 export const MobileNavigation = styled.nav`
   display: flex;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
   /* align-items: center; */
-  font-size: 14px;
+  font-size: 16px;
 
   @media screen and (min-width: 500px) {
     display: none;
@@ -66,11 +67,11 @@ export const TopHeader = styled.header`
 export const Social = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 2px;
-  margin-top: 4px;
+  margin-top: 6px;
   @media screen and (max-width: 500px) {
     margin-left: 2px;
-    margin-top: 5px;
+    margin-top: 8px;
   }
 `

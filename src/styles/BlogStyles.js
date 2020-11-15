@@ -1,24 +1,26 @@
 import styled from "styled-components"
 export const BlogCard = styled.div`
-  margin-top: 30px;
+  margin-top: 60px;
   line-height: 30px;
   h3 {
     /* margin-bottom: 1px; */
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 32px;
   }
 `
 
 export const DateText = styled.p`
-  font-size: 12px;
-  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
   color: gray;
 `
 
 export const ExcerptText = styled.p`
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 18px;
   color: #333;
-  line-height: 25px;
+  line-height: 36px;
   max-width: 500px;
   /* font-weight: bold; */
   /* color: gray; */

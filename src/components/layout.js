@@ -10,7 +10,7 @@ import GlobalStyles from "../styles/GlobalStyles"
 
 const FooterNav = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   font-weight: normal;
   margin-bottom: 10px;
@@ -32,10 +32,10 @@ const Layout = ({ children, location }) => {
         <main>{children}</main>
         <footer
           style={{
-            marginTop: "30PX",
+            marginTop: "50PX",
             marginBottom: "30px",
             textAlign: "center",
-            fontSize: "12px",
+            fontSize: "16px",
             color: "gray",
           }}
         >
