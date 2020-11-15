@@ -36,10 +36,6 @@ const Title = styled.h2`
   font-size: 24px;
   margin-top: 50px;
   line-height: 36px;
-  @media screen and (max-width: 500px) {
-    font-size: 20px;
-    line-height: 32px;
-  }
 `
 
 const blogpost = ({ data }) => {
