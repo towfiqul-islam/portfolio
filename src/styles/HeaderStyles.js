@@ -44,10 +44,12 @@ export const Navigation = styled.nav`
 
 export const MobileNavigation = styled.nav`
   display: flex;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
   /* align-items: center; */
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 500px) {
     display: none;

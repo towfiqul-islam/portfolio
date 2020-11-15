@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Skill = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -13,9 +13,6 @@ export const Skill = styled.div`
     line-height: 26px;
   }
   @media screen and (max-width: 500px) {
-    h2 {
-      font-size: 20px;
-    }
     span {
       font-size: 16px;
       font-weight: normal;
@@ -37,12 +34,12 @@ export const About = styled.div`
   @media screen and (max-width: 500px) {
     margin-top: 20px;
     h2 {
-      font-size: 20px;
+      /* font-size: 24px; */
       margin-bottom: 15px;
     }
     p {
       font-size: 18px;
-      line-height: 32px;
+      line-height: 36px;
     }
   }
 `
