@@ -35,7 +35,7 @@ const Layout = ({ children, location }) => {
             marginTop: "50PX",
             marginBottom: "30px",
             textAlign: "center",
-            fontSize: "16px",
+            fontSize: "14px",
             color: "gray",
             lineHeight: "20px",
           }}
