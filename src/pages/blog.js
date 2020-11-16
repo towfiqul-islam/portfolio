@@ -38,12 +38,11 @@ function BlogPage(props) {
             <BlogCard key={i}>
               <Link to={`/blog/${post.node.fields.slug}`}>
                 <h3>{post.node.frontmatter.title}</h3>
+                <DateText>
+                  {post.node.frontmatter.date} - {post.node.timeToRead} min read
+                </DateText>
+                <ExcerptText>{post.node.excerpt}</ExcerptText>{" "}
               </Link>
-
-              <DateText>
-                {post.node.frontmatter.date} - {post.node.timeToRead} min read
-              </DateText>
-              <ExcerptText>{post.node.excerpt}</ExcerptText>
             </BlogCard>
           ))}
         </div>
