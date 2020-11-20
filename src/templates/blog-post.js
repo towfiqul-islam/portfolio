@@ -34,10 +34,11 @@ const DateText = styled.p`
 const BlogPost = styled.div`
   font-size: 18px;
   line-height: 32px;
-  margin-top: 20px;
+  margin-top: 30px;
   @media screen and (max-width: 500px) {
     font-size: 16px;
     line-height: 30px;
+    margin-top: 20px;
   }
 `
 
@@ -49,6 +50,7 @@ const Title = styled.h2`
   @media screen and (max-width: 500px) {
     font-size: 20px;
     margin-top: 30px;
+    line-height: 32px;
   }
 `
 
@@ -60,6 +62,7 @@ const NextRead = styled.div`
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
+    font-size: 14px;
   }
   a {
     border-bottom: 1px solid gray;
@@ -71,6 +74,7 @@ const NextRead = styled.div`
   @media screen and (max-width: 500px) {
     p {
       font-size: 14px;
+      margin-bottom: 5px;
     }
     a {
       font-size: 16px;

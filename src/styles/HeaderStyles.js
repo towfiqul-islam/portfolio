@@ -35,7 +35,7 @@ export const Navigation = styled.nav`
 
   justify-content: end;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 
   @media screen and (max-width: 500px) {
     display: none;
@@ -47,7 +47,7 @@ export const MobileNavigation = styled.nav`
   gap: 30px;
   justify-content: center;
   /* align-items: center; */
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
 

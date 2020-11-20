@@ -34,7 +34,7 @@ export const WorkCard = styled.div`
     }
     p {
       font-size: 16px;
-      line-height: 30px;
+      line-height: 26px;
     }
   }
 `
@@ -56,7 +56,7 @@ export const SkillTag = styled.div`
   }
   @media screen and (max-width: 500px) {
     span {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `

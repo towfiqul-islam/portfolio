@@ -14,7 +14,7 @@ const FooterNav = styled.div`
   justify-content: center;
   font-weight: normal;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   a {
     color: gray;
   }
@@ -24,18 +24,18 @@ const FooterNav = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `
 
 const Footer = styled.footer`
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   color: gray;
   line-height: 20px;
-  @media screen and (max-width: 500px) {
-    margin-top: 30px;
+  p {
+    font-size: 12px;
   }
 `
 

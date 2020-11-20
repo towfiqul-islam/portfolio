@@ -33,7 +33,7 @@ export const ExcerptText = styled.p`
   margin-top: 10px;
   font-size: 18px;
   color: #333;
-  line-height: 36px;
+  line-height: 32px;
   max-width: 500px;
   /* font-weight: bold; */
   /* color: gray; */
