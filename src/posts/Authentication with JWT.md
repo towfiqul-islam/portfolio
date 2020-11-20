@@ -3,8 +3,6 @@ title: "Authentication with JWT"
 date: "December 17, 2019"
 ---
 
-<br>
-
 Often times you want to secure the routes of your sites to keep your user's data and sensitive information protected. In this sort of scenario jsonwebtoken or commonly known as JWT comes in handy.
 
 <br>

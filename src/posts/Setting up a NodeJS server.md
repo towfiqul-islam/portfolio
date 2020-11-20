@@ -3,8 +3,6 @@ title: "Setting up a NodeJS server"
 date: "December 16, 2019"
 ---
 
-<br>
-
 - Go to <https://nodejs.org>.
 - Download the latest LTS version of Node.
 - Install.

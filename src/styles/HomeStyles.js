@@ -13,6 +13,9 @@ export const Skill = styled.div`
     line-height: 26px;
   }
   @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 20px;
+    }
     span {
       font-size: 16px;
       font-weight: normal;
@@ -34,12 +37,12 @@ export const About = styled.div`
   @media screen and (max-width: 500px) {
     margin-top: 20px;
     h2 {
-      /* font-size: 24px; */
+      font-size: 20px;
       margin-bottom: 15px;
     }
     p {
-      font-size: 18px;
-      line-height: 36px;
+      font-size: 16px;
+      line-height: 30px;
     }
   }
 `

@@ -14,12 +14,17 @@ const FooterNav = styled.div`
   justify-content: center;
   font-weight: normal;
   margin-bottom: 10px;
+  font-size: 16px;
   a {
     color: gray;
   }
   a:hover {
     color: #333;
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
   }
 `
 
@@ -35,7 +40,7 @@ const Layout = ({ children, location }) => {
             marginTop: "50PX",
             marginBottom: "30px",
             textAlign: "center",
-            fontSize: "14px",
+
             color: "gray",
             lineHeight: "20px",
           }}
@@ -51,9 +56,12 @@ const Layout = ({ children, location }) => {
               <Link to="/blog">BLOG</Link>
             </span>
           </FooterNav>
-          © {new Date().getFullYear()}, Made by
-          {` `}
-          <span>Towfiqul Islam</span>
+          <p>
+            {" "}
+            © {new Date().getFullYear()}, Made by
+            {` `}
+            <span>Towfiqul Islam</span>
+          </p>
         </footer>
       </div>
     </>

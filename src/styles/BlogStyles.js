@@ -7,6 +7,12 @@ export const BlogCard = styled.div`
     font-size: 24px;
     line-height: 32px;
   }
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+    h3 {
+      font-size: 20px;
+    }
+  }
 `
 
 export const DateText = styled.p`
@@ -14,6 +20,13 @@ export const DateText = styled.p`
   font-size: 16px;
   font-weight: normal;
   color: #555;
+  @media screen and (max-width: 500px) {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: gray;
+    /* font-weight: bold; */
+  }
 `
 
 export const ExcerptText = styled.p`
@@ -24,4 +37,10 @@ export const ExcerptText = styled.p`
   max-width: 500px;
   /* font-weight: bold; */
   /* color: gray; */
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 5px;
+  }
 `

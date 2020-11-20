@@ -1,18 +1,19 @@
 import styled from "styled-components"
 
-export const Title = styled.h2`
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #606f7b;
-  letter-spacing: 1.2px;
-  @media screen and (max-width: 500px) {
-    font-size: 16px;
-  }
-`
+// export const Title = styled.h2`
+//   margin-top: 40px;
+//   margin-bottom: 30px;
+//   font-size: 18px;
+//   text-transform: uppercase;
+//   color: #606f7b;
+//   letter-spacing: 1.2px;
+//   @media screen and (max-width: 500px) {
+//     font-size: 16px;
+//   }
+// `
 
 export const WorkCard = styled.div`
+  margin-top: 60px;
   margin-bottom: 40px;
   line-height: 30px;
   h3 {
@@ -24,6 +25,17 @@ export const WorkCard = styled.div`
     font-size: 18px;
     line-height: 36px;
     color: #444;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 `
 
@@ -61,5 +73,11 @@ export const VisitLink = styled.a`
   }
   :hover {
     color: #102a43;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 `

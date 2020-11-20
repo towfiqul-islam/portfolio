@@ -3,8 +3,6 @@ title: "React image upload with Cloudinary, NodeJS and MongoDB"
 date: "December 16, 2019"
 ---
 
-<br>
-
 In this tutorial we are going to upload images in MongoDB with NodeJS and React. And we are going to use Cloudinary to store the images.
 
 <br>

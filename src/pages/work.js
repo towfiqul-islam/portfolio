@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/SEO.js"
 import {
   SkillTag,
-  Title,
   TitleWrapper,
   VisitLink,
   WorkCard,
@@ -15,7 +14,7 @@ const WorkPage = props => (
     <SEO title="Work" description="Full Stack Developer" />
     <Layout location={props.location}>
       <div>
-        <Title>These are my most recent work</Title>
+        {/* <Title>These are my most recent work</Title> */}
         <WorkCard>
           <TitleWrapper>
             <h3>

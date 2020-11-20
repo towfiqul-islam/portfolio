@@ -3,8 +3,6 @@ title: "An Introduction to REST API"
 date: "December 28, 2019"
 ---
 
-<br>
-
 If you are a front-end developer or a beginner in web development and want to learn about REST API this post is for you. I am going to use NodeJS and Express to demonstrate how to work with REST API. I have a tutorial on how to setup a NodeJS Express server [here](https://medium.com/@towfiqu/setting-up-a-nodejs-server-a58ae1615481). In case you don't know how to setup a NodeJS server; follow that one first and setup your server and come back.
 
 <br>
