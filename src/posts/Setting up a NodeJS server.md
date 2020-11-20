@@ -1,6 +1,7 @@
 ---
 title: "Setting up a NodeJS server"
 date: "December 16, 2019"
+next: "An Introduction to REST API"
 ---
 
 - Go to <https://nodejs.org>.

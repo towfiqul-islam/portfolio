@@ -28,6 +28,17 @@ const FooterNav = styled.div`
   }
 `
 
+const Footer = styled.footer`
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: gray;
+  line-height: 20px;
+  @media screen and (max-width: 500px) {
+    margin-top: 30px;
+  }
+`
+
 const Layout = ({ children, location }) => {
   return (
     <>
@@ -35,16 +46,7 @@ const Layout = ({ children, location }) => {
       <Header location={location} />
       <div>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: "50PX",
-            marginBottom: "30px",
-            textAlign: "center",
-
-            color: "gray",
-            lineHeight: "20px",
-          }}
-        >
+        <Footer>
           <FooterNav>
             <span>
               <Link to="/">HOME</Link>
@@ -62,7 +64,7 @@ const Layout = ({ children, location }) => {
             {` `}
             <span>Towfiqul Islam</span>
           </p>
-        </footer>
+        </Footer>
       </div>
     </>
   )

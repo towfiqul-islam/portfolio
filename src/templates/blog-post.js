@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import SEO from "../components/SEO.js"
@@ -10,6 +10,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        next
       }
       html
       timeToRead
@@ -31,8 +32,8 @@ const DateText = styled.p`
 `
 
 const BlogPost = styled.div`
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 32px;
   margin-top: 20px;
   @media screen and (max-width: 500px) {
     font-size: 16px;
@@ -50,6 +51,36 @@ const Title = styled.h2`
     margin-top: 30px;
   }
 `
+
+const NextRead = styled.div`
+  margin-top: 40px;
+  p {
+    margin-bottom: 10px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  a {
+    border-bottom: 1px solid gray;
+    padding-bottom: 2px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 14px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+`
+
+const createSlug = str => {
+  return str.replace(/\s+/g, "-").toLowerCase()
+}
 
 const blogpost = ({ data }) => {
   return (
@@ -70,6 +101,15 @@ const blogpost = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
           ></BlogPost>
         </div>
+        <NextRead>
+          <p>Next Read</p>
+          <Link
+            to={`/blog/${createSlug(data.markdownRemark.frontmatter.next)}`}
+          >
+            {data.markdownRemark.frontmatter.next}{" "}
+          </Link>
+          <span style={{ marginLeft: "5px" }}>&#8594;</span>
+        </NextRead>
       </Layout>
     </>
   )

@@ -11,7 +11,7 @@
   background: black;
   border-radius: 0 0 0.25rem 0.25rem;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.025rem;
   /* padding: 0.1rem 0.5rem; */
   position: absolute;
@@ -30,6 +30,15 @@ code[class*="language-"] {
 
 .gatsby-highlight pre[class*="language-"] {
   padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    /* font-family: "Operator Mono"; */
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 /* .gatsby-highlight pre[class="language-javascript"]::before {

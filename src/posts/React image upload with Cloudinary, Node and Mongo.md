@@ -1,6 +1,7 @@
 ---
 title: "React image upload with Cloudinary, NodeJS and MongoDB"
 date: "December 16, 2019"
+next: "Removing .html extension from Netlify Hosted Static Site with Parcel"
 ---
 
 In this tutorial we are going to upload images in MongoDB with NodeJS and React. And we are going to use Cloudinary to store the images.

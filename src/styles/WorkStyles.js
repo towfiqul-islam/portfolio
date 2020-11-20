@@ -23,7 +23,7 @@ export const WorkCard = styled.div`
 
   p {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 32px;
     color: #444;
   }
   @media screen and (max-width: 500px) {
@@ -51,7 +51,7 @@ export const SkillTag = styled.div`
     background: #e4e4e4;
     padding: 5px 8px;
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
   }
   @media screen and (max-width: 500px) {
@@ -62,7 +62,7 @@ export const SkillTag = styled.div`
 `
 
 export const VisitLink = styled.a`
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: #606f7b;

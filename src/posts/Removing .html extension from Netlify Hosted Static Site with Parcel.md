@@ -1,6 +1,7 @@
 ---
 title: "Removing .html extension from Netlify Hosted Static Site with Parcel."
 date: "December 29, 2019"
+next: "Setting up a NodeJS server"
 ---
 
 You have made a cool site with html, CSS & JavaScript, and you have seen how easy it is to host on [Netlify](https://www.netlify.com/) And you have done that too. But there is a slight little issue. Your website showing these ugly .html extension at the end of your URL.

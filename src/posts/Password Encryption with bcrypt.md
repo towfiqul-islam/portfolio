@@ -1,6 +1,7 @@
 ---
 title: "NodeJS Password Encryption with bcrypt"
 date: "December 17, 2019"
+next: "React image upload with Cloudinary, Node and Mongo"
 ---
 
 Assuming you already know basic NodeJS and how to work with REST API let's add one more thing to your development skill sets. Which encrypting user password with bcrypt.
