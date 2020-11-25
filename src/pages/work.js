@@ -19,11 +19,11 @@ const WorkPage = props => (
           <TitleWrapper>
             <h3>
               <a
-                href="https://spotr.vercel.app"
+                href="https://simplifind.com.bd"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Spotr
+                Simplifind
               </a>
             </h3>
           </TitleWrapper>
