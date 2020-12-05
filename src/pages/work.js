@@ -32,7 +32,7 @@ const WorkPage = props => (
             preferences from various e-commerce sites in Bangladesh.
           </p>
           <VisitLink
-            href="https://spotr.vercel.app"
+            href="https://simplifind.com.bd/"
             target="_blank"
             rel="noopener noreferrer"
           >
