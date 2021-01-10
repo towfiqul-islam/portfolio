@@ -19,6 +19,35 @@ const WorkPage = props => (
           <TitleWrapper>
             <h3>
               <a
+                href="https://yos.com.bd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YOS Health
+              </a>
+            </h3>
+          </TitleWrapper>
+          <p>
+            A healthcare startup based in Dhaka, Bangladesh with a mission to
+            ease the pain of health services.
+          </p>
+          <VisitLink
+            href="https://yos.com.bd/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit the site <span>&#8594;</span>
+          </VisitLink>
+          <SkillTag>
+            <span>React</span>
+            <span>NodeJS</span>
+            <span>MySQL</span>
+          </SkillTag>
+        </WorkCard>
+        <WorkCard>
+          <TitleWrapper>
+            <h3>
+              <a
                 href="https://simplifind.com.bd"
                 target="_blank"
                 rel="noopener noreferrer"
